@@ -33,7 +33,7 @@ The `langchain-huggingface` package uses the PyTorch framework, which is not sup
 1. Install the PyTorch CPU version
 
 ```bash
-uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
+uv pip add --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu
 ```
 
 You can verify that the installation was successful by running the following command:
@@ -41,6 +41,8 @@ You can verify that the installation was successful by running the following com
 ```bash
 uv run torch_test.py
 ```
+
+More information can be foundhere: https://developer.apple.com/metal/pytorch/
 
 2. Then install the langchain-huggingface package
 
